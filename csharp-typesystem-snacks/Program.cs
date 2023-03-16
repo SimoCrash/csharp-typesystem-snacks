@@ -1,7 +1,8 @@
 ﻿//snack1();
 //snack2();
 //snack3();
-snack4();
+//snack4();
+snack5();
 
 void snack1()
 {
@@ -70,4 +71,13 @@ void snack4()
         mid = sum / 9;
     }
     Console.WriteLine("La somma totale dei numeri da 2 a 10 è {0} e la media è {1}", sum, mid);
+}
+
+void snack5()
+{
+    Console.WriteLine("Inserisci un numero e premi Enter, se è dispari inserirò il numero successivo");
+    int num = Convert.ToInt32(Console.ReadLine());
+    int numPari = num % 2 == 0 ? num : (num + 1);
+    Console.WriteLine($"Il numero che hai inserito è {numPari}");
+
 }

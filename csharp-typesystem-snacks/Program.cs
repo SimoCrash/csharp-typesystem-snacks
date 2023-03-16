@@ -1,5 +1,6 @@
 ﻿//snack1();
-snack2();
+//snack2();
+snack3();
 
 void snack1()
 {
@@ -43,4 +44,16 @@ void snack2()
     {
         Console.WriteLine(longWord);
     }
+}
+
+void snack3()
+{
+    int sum = 0;
+    for (int i = 1; i <= 10; i++) 
+    {
+        Console.WriteLine("inserisci un numero {0}", i);
+        int num = Convert.ToInt32(Console.ReadLine());
+        sum += num;       
+    }
+    Console.WriteLine(sum);
 }

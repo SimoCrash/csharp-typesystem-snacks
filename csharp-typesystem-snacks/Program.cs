@@ -1,4 +1,5 @@
-﻿snack1();
+﻿//snack1();
+snack2();
 
 void snack1()
 {
@@ -20,5 +21,26 @@ void snack1()
     {
         Console.WriteLine(maggiore + " è il numero piu' grande");
 
+    }
+}
+
+void snack2()
+{
+    Console.WriteLine("Scrivi due parole: stamperò prima quella piu' corta e poi quella piu' lunga");
+    Console.WriteLine("Scrivi la prima parola e premi Enter");
+    string word1 = Console.ReadLine();
+
+    Console.WriteLine("Scrivi la seconda parola e premi Enter");
+    string word2 = Console.ReadLine();
+
+    string longWord = word1.Length > word2.Length ? "La parola piu' corta è " + word2 + ", la piu' lunga è " + word1 : "La parola piu' corta è " + word1 + ", la piu' lunga è " + word2;
+
+    if (word1.Length == word2.Length) 
+    {
+        Console.WriteLine("Controlla che una parola sia piu lunga dell'altra");
+    }
+    else
+    {
+        Console.WriteLine(longWord);
     }
 }

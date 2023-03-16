@@ -3,9 +3,8 @@
 //snack3();
 //snack4();
 //snack5();
-using System.Security.Cryptography.X509Certificates;
-
-snack6();
+//snack6();
+snack7();
 
 void snack1()
 {
@@ -106,4 +105,29 @@ void snack6()
         }
     }
     Console.WriteLine((presenza == false) ? "Il tuo nome è " + nome + " e non sei stato invitato" : "Il tuo nome è " + nome + " e sei stato invitato");
+}
+
+void snack7()
+{
+    int[] numeriDispari = new int[6];
+
+    for (int i = 0; i < 6; i++)
+    {
+        Console.Write("Inserisci il {0}° numero: ", i + 1);
+        int numero = int.Parse(Console.ReadLine());
+
+        if (numero % 2 == 1)
+        {
+            numeriDispari[i] = numero;
+        }
+    }
+
+    Console.WriteLine("Numeri dispari inseriti:");
+    for (int i = 0; i < numeriDispari.Length; i++)
+    {
+        if (numeriDispari[i] != 0)
+        {
+            Console.WriteLine(numeriDispari[i]);
+        }
+    }
 }

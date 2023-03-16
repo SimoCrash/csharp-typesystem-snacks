@@ -4,7 +4,8 @@
 //snack4();
 //snack5();
 //snack6();
-snack7();
+//snack7();
+snack8();
 
 void snack1()
 {
@@ -130,4 +131,16 @@ void snack7()
             Console.WriteLine(numeriDispari[i]);
         }
     }
+}
+
+void snack8()
+{
+    int[] myArray = { 1, 3, 4, 6, 7, 9, 10, 11, 12 };
+    for (int i = 0;i < myArray.Length;i++) 
+    {
+        if (myArray[i] % 2 == 1) 
+        {
+            Console.WriteLine("stampo i numeri dispari: " + myArray[i]);
+        }
+    } 
 }

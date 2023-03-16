@@ -2,7 +2,10 @@
 //snack2();
 //snack3();
 //snack4();
-snack5();
+//snack5();
+using System.Security.Cryptography.X509Certificates;
+
+snack6();
 
 void snack1()
 {
@@ -79,5 +82,17 @@ void snack5()
     int num = Convert.ToInt32(Console.ReadLine());
     int numPari = num % 2 == 0 ? num : (num + 1);
     Console.WriteLine($"Il numero che hai inserito è {numPari}");
+}
+
+void snack6()
+{
+    string[] invitati = { "Alessio", "Claudio", "Laura", "Marco", "Simone", "Joe", "Mary" };
+    Console.WriteLine("Inserisci il tuo nome per scoprire se sei stato invitato alla festa di Gatsby");
+    string nome = (Console.ReadLine());
+    int presenza = Array.IndexOf(invitati, nome);
+    Console.WriteLine((presenza < 0) ? "Il tuo nome è " + nome + " e non sei stato invitato" : "Il tuo nome è " + nome + " e sei stato invitato");
+
+
+
 
 }

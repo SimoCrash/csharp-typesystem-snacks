@@ -86,13 +86,24 @@ void snack5()
 
 void snack6()
 {
+    //string[] invitati = { "Alessio", "Claudio", "Laura", "Marco", "Simone", "Joe", "Mary" };
+    //Console.WriteLine("Inserisci il tuo nome per scoprire se sei stato invitato alla festa di Gatsby");
+    //string nome = (Console.ReadLine());
+    //int presenza = Array.IndexOf(invitati, nome);
+    //Console.WriteLine((presenza < 0) ? "Il tuo nome è " + nome + " e non sei stato invitato" : "Il tuo nome è " + nome + " e sei stato invitato");
+
     string[] invitati = { "Alessio", "Claudio", "Laura", "Marco", "Simone", "Joe", "Mary" };
     Console.WriteLine("Inserisci il tuo nome per scoprire se sei stato invitato alla festa di Gatsby");
     string nome = (Console.ReadLine());
-    int presenza = Array.IndexOf(invitati, nome);
-    Console.WriteLine((presenza < 0) ? "Il tuo nome è " + nome + " e non sei stato invitato" : "Il tuo nome è " + nome + " e sei stato invitato");
+    bool presenza = false;
 
-
-
-
+    for (int i = 0; i < invitati.Length; i++)
+    {
+        if (invitati[i] == nome)
+        {
+            presenza = true;
+            break;
+        }
+    }
+    Console.WriteLine((presenza == false) ? "Il tuo nome è " + nome + " e non sei stato invitato" : "Il tuo nome è " + nome + " e sei stato invitato");
 }

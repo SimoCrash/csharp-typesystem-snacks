@@ -1,6 +1,7 @@
 ﻿//snack1();
 //snack2();
-snack3();
+//snack3();
+snack4();
 
 void snack1()
 {
@@ -49,11 +50,24 @@ void snack2()
 void snack3()
 {
     int sum = 0;
+    Console.WriteLine("inserisci 10 numeri e io ti darò la somma");
     for (int i = 1; i <= 10; i++) 
     {
         Console.WriteLine("inserisci un numero {0}", i);
         int num = Convert.ToInt32(Console.ReadLine());
         sum += num;       
     }
-    Console.WriteLine(sum);
+    Console.WriteLine("La somma totale dei numeri inseriti è {0}", sum);
+}
+
+void snack4()
+{
+    int sum = 0;
+    float mid = 0;
+    for (int i = 2; i <= 10; i++)
+    {
+        sum += i;
+        mid = sum / 9;
+    }
+    Console.WriteLine("La somma totale dei numeri da 2 a 10 è {0} e la media è {1}", sum, mid);
 }
